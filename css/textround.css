@@ -1,0 +1,28 @@
+.news-ticker {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background-color:oklch(50.5% 0.213 27.518);
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.news-content {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 50px;
+    padding: 0 20px;
+    /* Hapus animasi sementara */
+    left: 20px; /* Posisi awal sementara */
+    visibility: hidden; /* Sembunyikan sementara */
+}
+.news-ticker.ready .news-content {
+    visibility: visible;
+    left: 100%;
+    animation: scroll-news linear infinite;
+}

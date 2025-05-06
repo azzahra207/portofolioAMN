@@ -1,0 +1,47 @@
+/* From Uiverse.io by Navarog21 */ 
+.filter {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge oklch(57.7% 0.245 27.325);
+    outline: none;
+    background-color: transparent;
+    color: oklch(57.7% 0.245 27.325);
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .filter::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #fff;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .filter::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  
+  .filter:hover::before, .filter:hover::after {
+    transform: scale(0)
+  }
+  
+  .filter:hover {
+    box-shadow: inset 0px 0px 25px oklch(57.7% 0.245 27.325);
+  }

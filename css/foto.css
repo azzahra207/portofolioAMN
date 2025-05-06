@@ -1,0 +1,102 @@
+.clickable-img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.clickable-img:hover {
+    transform: scale(1.05);
+}
+
+/* Style overlay fullscreen */
+.fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media only screen and (max-width:767px){
+
+    .box {
+
+   flex-basis:90%;
+   
+ }
+}
+.box {
+    width:500px;
+    margin-bottom:5%;
+
+}
+.box div, iframe{
+   width:100%
+}
+@media only screen and (min-width:768px){
+    
+    .box {
+        
+        flex-basis:90%;
+   /* min-width:200px;
+   height: 720px; */
+   
+   margin-bottom:5px;
+ }
+}
+.flex {
+  display: flex;
+  margin:auto;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  }
+  .custom-btn {
+        width: 20%;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-4 {
+    background: #1E90ff;
+    border: none;
+}
+
+.btn-4:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-4:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+  -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.2),
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
