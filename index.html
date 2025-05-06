@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/textround.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/foto.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="import.js"></script>
+    <script src="js/typed.umd.js"></script>
+  <style>
+     @media only screen and (min-width:768px){
+        .icon{
+        width:35%;
+    }
+    }
+    @media only screen and (max-width:767px){
+        .icon {
+            width:100%;
+        }
+    }
+    h3{
+      font-size: 3vw !important;
+    }
+    .icon {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Style default */
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 8px;
+  color: #e5a6a6;
+}
+
+.icon.active {
+  /* Style ketika aktif/dipilih */
+  color: #ef4444;
+  border-bottom: 2px solid #ef4444; /* merah */
+  text-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+.icon h3 {
+  margin: 0;
+}
+.logoPro{
+  width: 50px;
+}
+#dokumentasi {
+  position: relative !important; 
+  overflow: hidden !important; 
+}
+
+#dokumentasi .caption {
+  position: absolute;
+  color: white;;
+  padding: 10px;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7); 
+  text-align: center;
+  transition: bottom 0.4s ease;
+}
+
+#dokumentasi:hover .caption {
+  bottom: 0;
+}
+
+  </style>
+    <script src="js/sweetalert.min.js"></script>
+
+</head>
+<body class="bg-white-900">
+  <header id="navigasi" class="text-gray-900 body-font sticky-top">
+    <div class="container mx-auto flex flex-wrap px-5 py-3 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
+      <img src="img/Resume.png" alt="Icon Pengalaman" class="w-10 h-10 p-2 bg-red-500 rounded-full" />
+
+      <span class="ml-3 text-red-700 text-xl">Portfolio</span>
+    </a>
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-white-700	flex flex-wrap items-center text-base justify-center">
+      <a href="index.html" class="mr-5 hover:text-red-700">Home</a>
+      <a href="pengalaman.html" class="mr-5 hover:text-red-700">Experience</a>
+      <a href="project.html" class="mr-5 hover:text-red-700">Project</a>
+      <a href="award.html" class="mr-5 hover:text-red-700">Award</a>
+      <a href="index.html#kontak" class="mr-5 hover:text-red-700">Contact</a>
+    </nav>
+  </div>
+</header>
+<header id="headerOlim" class="bg-white-900 d-flex flex-wrap align-items-top px-5" >
+    <div data-aos="fade-up" data-aos-duration="1000" class="center mt-5">
+        <h1 class="text-success"><span class="fs-3 fw-bold text-dark">Welcome to</span> <br> <span  class="judul text-red-700" style="font-size:6vw;font-weight:bold">My Portfolio</span></h1>    
+        <p class="fw-bold text-dark" style="margin-bottom:10px"></p><span id="auto-type"  class="fw-bold text-dark fs-1"></span></p>
+        <div class="d-flex flex-wrap gap-2 mt-5 fw-bold" id="nav">
+            <a href="#tupoksi" class="button" style="width: 20%"><span>Biodata</span></a>
+            <a href="#alasan" class="button" style="width: 20%"><span>Alasan</span></a>
+            <a href="#pendidikan" class="button" style="width: 25%"><span>Pendidikan</span></a>
+            <a href="#bakat" class="button" style="width: 20%"><span>Bakat</span></a>
+            <a href="#tahfiz" class="button"><span>Tahfiz</span></a>
+            <a href="#prodistik" class="button"  style="width: 25%"><span>PRODISTIK</span></a>
+            <a href="#olimpiade" class="button px-0"><span>Olimpiade</span></a>
+            <a href="#osis" class="button"><span>OSIS</span></a>
+        </div>
+    </div>
+    <div data-aos="fade-right" data-aos-duration="1000" class="right">
+        <img class="mt-3 d-block m-auto" src="img/photo_2025-05-01_05-50-58.jpg" alt="">
+    </div>
+</header>
+<div class="news-ticker mt-5" id="newsTickerContainer">
+  <div class="news-content" id="newsTicker">
+      Selamat Datang di website Portofolio Sidqiana Azzahra.....🤗. Saya akan berbagi pengalaman dan prestasi di website ini, untuk info selengkapnya, dapat ditanyakan pada saat interview kelak... Terima kasih atas kunjungannya...☺️🙏
+  </div>
+</div>
+
+<h1 style="font-size: 2.5em;" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-danger-emphasis">Biodata</h1>
+<img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block"  src="img/hr.png" alt="">
+<div class="d-flex flex-wrap" id="tupoksi">
+  <div id="tugas" class="w-50 p-5">
+    <img class="w-75 d-block mx-auto" src="img/edit.png" alt="">
+  </div>
+  <div id="tugas" class="w-50 p-5">
+    <div class="card border-danger">
+        <ul class="list-group list-group-flush">
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Nama Lengkap</h1>
+            </div>
+            <div class="w-75">
+              <h4>: Sidqiana Azzahra</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Nama Panggilan</h1>
+            </div>
+            <div class="w-75">
+              <h4>: Zahra</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">NIK</h1>
+            </div>
+            <div class="w-75">
+              <h4>: 3513036207070002</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">NISN</h1>
+            </div>
+            <div class="w-75">
+              <h4>: 0079808897</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Tempat Tanggal Lahir</h1>
+            </div>
+            <div class="w-75">
+              <h4>: Probolinggo, 22 Juli 2007</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Jenis Kelamin</h1>
+            </div>
+            <div class="w-75">
+              <h4>: Perempuan</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Agama</h1>
+            </div>
+            <div class="w-75">
+              <h4>: Islam</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Diterima di</h1>
+            </div>
+            <div class="w-75">
+              <h4>: S1-Teknik Informatika UNESA</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Asal Sekolah</h1>
+            </div>
+            <div class="w-75">
+              <h4>: MA ZAINUL HASAN 1 GENGGONG</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Pendaftar Jalur</h1>
+            </div>
+            <div class="w-75">
+              <h4>: Reguler</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Akun Github</h1>
+            </div>
+            <div class="w-25">
+              <h4>: azzahra207</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Akun Telegram</h1>
+            </div>
+            <div class="w-25">
+              <h4>: @ErvaKurnia</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Akun Instagram</h1>
+            </div>
+            <div class="w-25">
+              <h4>: @azzahra_207</h4>
+            </div>
+          </li>
+          <li class="d-flex list-group-item hover:bg-red-400/20">
+            <div class="w-25">
+              <h1 class="fw-bold ">Alamat</h1>
+            </div>
+            <div class="w-75">
+              <h4>: RT 008 RW 002 Desa Kedawung, Kec. Kuripan, Kab Probolinggo, Prov. Jawa Timur</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+</div>
+</div>
+<h1 style="font-size: 2.5em;" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-danger-emphasis">Alasan Memilih AMN Surabaya</h1>
+<img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block"  src="img/hr.png" alt="">
+<section id="alasan" class="text-gray-600 body-font">
+  <div class="container px-5 py-5 mx-auto flex flex-col">
+    <div class="lg:w-4/6 mx-auto">
+      <div class="rounded-lg h-64 overflow-hidden">
+        <img alt="content" class="object-cover object-center h-full w-full" src="img/gedung-amn.jpeg">
+      </div>
+      <div class="flex flex-col sm:flex-row mt-10">
+        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+            <img src="img/logo-amn.jpg" alt="">
+          </div>
+          <div class="flex flex-col items-center text-center justify-center">
+            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Asrama Mahasiswa Nusantara</h2>
+            <div class="w-12 h-1 bg-red-500 rounded mt-2 mb-4"></div>
+            <p class="text-base">MP7P+WPM, Siwalankerto, Kec. Wonocolo, Surabaya, Jawa Timur 60236</p>
+          </div>
+        </div>
+        <div style="height: 20vw;" class="overflow-y-auto sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+          <p class="leading-relaxed text-lg mb-4">
+            Pada umumnya, beasiswa menjadi impian bagi setiap mahasiswa. Terutama, para pejuang pendidikan dengan cita - cita tinggi yang terhambat oleh mahalnya biaya perkuliahan. Tidak heran jika banyak pelajar khususnya di Indonesia yang putus tengah jalan. Akibatnya, pengangguran terjadi di mana mana, hingga memicu turunnya kualitas sumber daya manusia pada generasi penerus bangsa. Dalam permasalahan ini, pemerintah mengadakan program beasiswa di berbagai tempat, salah satunya Asrama Mahasiswa Nusantara Surabaya. Beasiswa yang menyediakan tunjangan lengkap sesuai kebutuhan para mahasiswa. Selain itu, AMN Surabaya dapat dijadikan sebagai sarana bersaing sehat bersama mahasiswa dari berbagai daerah untuk mengeksplor bakat dan minat yang dimiliki. Tentunya, hal ini begitu menarik bagi saya dan keluarga. Di sinilah kesempatan emas dalam berjuang meraih pendidikan sekaligus membantu perekonomian keluarga.
+          </p>
+          <p class="leading-relaxed text-lg mb-4">
+            Saya juga melakukan pertimbangan terkait pendaftaran beasiswa ini, salah satunya dengan melakukan istikharah. Saya yakin Allah maha tahu atas segala sesuatu, dan memohon petunjuk dari-Nya adalah jalan terbaik sebelum mengambil suatu keputusan.
+          </p>
+          <p class="leading-relaxed text-lg mb-4">
+            Hasilnya Alhamdulillah luar biasa. Selama tiga kali melakukan istikharah, Allah menunjukkan keindahan ayat Al-Quran pada : 
+            <span onclick="ayat1()" class="text-sm bg-danger-subtle px-3 rounded-pill">QS. Al-An'am 7: 87</span>
+            <span onclick="ayat2()" class="text-sm bg-danger-subtle px-3 rounded-pill">QS. Al-A'raf 7: 156</span>
+            <span onclick="ayat3()" class="text-sm bg-danger-subtle px-3 rounded-pill">QS. Yusuf: 64</span>
+          </p>
+          <p class="leading-relaxed text-lg mb-4">
+            Sungguh besar harapan saya untuk menjadi salah satu bagian dari penerima beasiswa AMN Surabaya. Menggali bakat bersama teman-teman dari berbagai suku dan daerah. Terkait kewajiban untuk tinggal di asrama, insyaAllah saya siap sepenuhnya, mengingat latar belakang saya yang merupakan santri dari Pesantren Zainul Hasan Genggong. Diajarkan untuk terbiasa dengan padatnya kegiatan serta adaptasi di berbagai situasi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="pendidikan">
+  <h1 style="font-size: 2.5em;" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-danger-emphasis">Riwayat Pendidikan</h1>
+  <img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-4"  src="img/hr.png" alt=""> 
+  <div id="riwayat" class="d-flex flex-wrap gap-4 justify-center">
+    <div class="w-25 rounded-3 p-1" style="box-shadow: 0px 6px 24px 0px rgba(241, 7, 7, 0.2);">
+      <img class="rounded-3 w-100" src="img/gedung-sd.jpg" alt="">
+      <div class="p-3 d-flex">
+        <div class="w-25">
+          <img src="img/logo-sd.jpg" alt="">
+        </div>
+        <div class="w-75 p-3">
+          <h1 class="fw-bold">SDN Kedawung 1</h1>
+        <a class="text-red-600 hover:text-red-700" href="https://dapo.dikdasmen.go.id/sekolah/2366A06196FB2BD21D55">
+          Show More &rarr;
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="w-25 rounded-3 p-1" style="box-shadow: 0px 6px 24px 0px rgba(241, 7, 7, 0.2);">
+      <img class="rounded-3 w-100" src="img/gedung-smp.jpg" alt="">
+      <div class="p-3 d-flex">
+        <div class="w-25">
+          <img src="img/logo-smp.png" alt="">
+        </div>
+        <div class="w-75 p-3">
+          <h1 class="fw-bold">SMP Zainul Hasan 1 Genggong</h1>
+          <a class="text-red-600 hover:text-red-700" href="https://smpzainulhasan.sch.id">
+            Show More &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="w-25 rounded-3 p-1" style="box-shadow: 0px 6px 24px 0px rgba(241, 7, 7, 0.2);">
+      <img class="rounded-3 w-100" src="img/gedung-ma.jpg" alt="">
+      <div class="p-3 d-flex">
+        <div class="w-25">
+          <img src="img/logo-ma.png" alt="">
+        </div>
+        <div class="w-75 p-3">
+          <h1 class="fw-bold">MA Zainul Hasan 1 Genggong</h1>
+          <a class="text-red-600 hover:text-red-700" href="https://web.mazainulhasan1.sch.id">
+            Show More &rarr;
+          </a>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+<h1 style="font-size: 2.5em;" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-danger-emphasis">Minat dan Bakat</h1>
+<img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-5"  src="img/hr.png" alt=""> 
+<section id="bakat" class="card w-75 mx-auto p-3">
+<div class="d-flex justify-content-center flex-wrap gap-3">
+  <div class="icon" data-type="prog">
+    <h3 class="hover:text-red-500 text-center fw-bold">Akademik</h3>
+  </div>
+  <div class="icon" data-type="design">
+    <h3 class="hover:text-red-500 text-center fw-bold">Non Akademik</h3>
+  </div>
+</div>
+<hr>
+<div id="description-container">
+  <h5 class="text-center text-secondary">Klik kategori di atas untuk melihat rinciannya</h5>
+  
+</div>
+<div class="description" data-type="prog" style="display: none;">
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-10 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Berikut Beberapa minat dan bakat di bidang akademik berdasarkan pengalaman dan pencapaian, klik bagian card untuk melihat bukti dokumentasi.
+        </p>
+      </div>
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="frontEnd()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/front-end.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Full Stack Developer</h2>
+              <p class="text-gray-500">Laravel</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="backEnd()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/logo-python.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Python Language</h2>
+              <p class="text-gray-500">Laravel dan MySQL</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="logika()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/osn-infor.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Logical Thinking</h2>
+              <p class="text-gray-500">OSN Informatika</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="math()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/math.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Math Olympiad</h2>
+              <p class="text-gray-500">OSN, KSM, dll</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="fisika()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/fisika.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Analisis Fisika</h2>
+              <p class="text-gray-500">Lomba PHYSTON</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="excel()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/excel.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Excel Basic</h2>
+              <p class="text-gray-500">Procommit ITS</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="sejarah()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/sejarah.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Sejarah Indonesia</h2>
+              <p class="text-gray-500">Lomba KSSI</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="bahasa()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/indo.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Bahasa Indonesia</h2>
+              <p class="text-gray-500">Lomba SSRO</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="kti()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/kti.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Karya Tulis Ilmiah</h2>
+              <p class="text-gray-500">Procommit ITS</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <div class="flex gap-5 justify-content-end pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+    <a href="project.html" class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">
+      <div class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Bukti Karya &rarr;</div>
+    </a>
+    <a href="award.html" class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">
+      <div class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Bukti Sertifikat &rarr;</div>
+    </a>
+  </div>
+</div>
+<div class="description" data-type="design" style="display: none;">
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-10 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Berikut Beberapa minat dan bakat di bidang non akademik berdasarkan pengalaman dan pencapaian, klik bagian card untuk melihat bukti dokumentasi.
+        </p>
+      </div>
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="ketua()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/ketua.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Leadership</h2>
+              <p class="text-gray-500">Ketua Panitia Diklat</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="jurnalis()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/jurnalis.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Jurnalis</h2>
+              <p class="text-gray-500">Pewarta Buletin</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="ui()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/figma.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">UI Designer</h2>
+              <p class="text-gray-500">Rancangan TA</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="speak()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/speak.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Public Speaking</h2>
+              <p class="text-gray-500">Presentasi Karya</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="sastra()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/sastra.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Menulis Karya Sastra</h2>
+              <p class="text-gray-500">Cerpen dan Puisi</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="design()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/design.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Design Visual</h2>
+              <p class="text-gray-500">Design Vector</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="lukis()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/lukis.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Seni Lukis Sketsa</h2>
+              <p class="text-gray-500">Sketsa wajah</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="tari()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/saman.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Pertunjukan Tari</h2>
+              <p class="text-gray-500">Tari Tradisional</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div onclick="konselor()" class="hover:bg-rose-400/20 h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/prodistik/konseling.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Konseling Sosial</h2>
+              <p class="text-gray-500">Pendengar Curhatan</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <div class="flex gap-5 justify-content-end pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+    <a href="pengalaman.html" class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">
+      <div class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Bukti Dokumentasi &rarr;</div>
+    </a>
+    <a href="award.html#lainnya" class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">
+      <div class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Bukti Sertifikat &rarr;</div>
+    </a>
+  </div>
+</div>
+</section>
+<h1 style="font-size: 2.5em;" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-danger-emphasis">Tahfizul Quran</h1>
+<img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-5"  src="img/hr.png" alt=""> 
+<section id="tahfiz" class="text-gray-600 body-font">
+  <div class="container px-5 mx-auto flex flex-wrap">
+    <div class="flex w-full mb-20 flex-wrap">
+      <p class="lg:pl-6 lg:w-2/3 mx-auto text-center leading-relaxed text-base">
+        Sejak kelas 8, saya mengikuti program Tahfiz Al-Quran di Pesantren Zainul Hasan Genggong. Berikut dokumentasi foto dan sertifikat. klik bagian konten untuk melihat lebih jelas.
+      </p>
+    </div>
+    <div class="flex flex-wrap md:-m-2 -m-1">
+      <div class="flex flex-wrap w-1/2">
+        <div id="dokumentasi" class="md:p-2 p-1 w-1/2">
+          <img onclick="openFullscreen(this)" alt="gallery" class="clickable-img w-full object-cover h-full object-center block" src="img/sertifikat/hafal cepat.png">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Nominasi Hafal Cepat</h1>
+            <p class="text-center text-sm">Dihitung dari pendapatan selama 1 tahun</p>
+          </div>
+        </div>
+        <div id="dokumentasi" class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full object-cover h-full object-center block" src="img/sertifikat/tahfiz 9.png">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Tahfiz Terbaik</h1>
+            <p class="text-center text-sm">Uji Publik wisuda tahfiz 9 juz</p>
+          </div>
+        </div>
+        <div id="dokumentasi" class="md:p-2 p-1 w-full">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full h-full object-cover object-center block" src="img/sertifikat/tahfiz26.png">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Tahfiz 26 Juz</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div id="dokumentasi" class="md:p-2 p-1 w-full">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full h-full object-cover object-center block" src="img/dokumentasi/rq.jpg">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Wisuda 25 Juz</h1>
+            <p class="text-center text-sm">Pondok Putri Pusat Pesantren Zainul Hasan Genggong</p>
+          </div>
+        </div>
+        <div id="dokumentasi" class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full object-cover h-full object-center block" src="img/dokumentasi/wisuda 25.jpg">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Wisuda 25 Juz</h1>
+            <p class="text-center text-sm">Pondok Putri Pusat Pesantren Zainul Hasan Genggong</p>
+          </div>
+        </div>
+        <div id="dokumentasi" class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full object-cover h-full object-center block" src="img/dokumentasi/tasmi' mumtaz.jpg">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Tasmi' Al-Quran</h1>
+            <p class="text-center text-sm">Perolehan nilai Mumtaz pada ujian Tasmi' Al-Quran</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<h1 style="font-size: 2.5em;" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-danger-emphasis">PRODISTIK</h1>
+<img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-5"  src="img/hr.png" alt=""> 
+<section id="prodistik" class="text-gray-600 body-font">
+  <div class="container px-5 mx-auto">
+    <div class="flex flex-col text-center w-full mb-5">
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        PRODISTIK (Program Terapan Bidang TIK) merupakan salah satu program unggulan yang saya ikuti di MA Zainul Hasan 1 Genggong. Program ini bekerja sama dengan Fakultas Ilmu Pendidikan UM. Bertujuan meningkatkan kemampuan para santri di bidang teknologi. Program ini dibagi menjadi 3 jurusan, dan saya memilih untuk berada di jurusan programming. Berikut materi yang dipelajari selama PRODISTIK.
+      </p>
+    </div>
+    <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+      <table class="table-auto w-full text-left whitespace-no-wrap">
+        <thead>
+          <tr>
+            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">Logo</th>
+            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Materi</th>
+            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Kemampuan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="px-4 py-3"><img class="logoPro" src="img/prodistik/word.png" alt=""></td>
+            <td class="px-4 py-3">Microsoft Word</td>
+           <td class="px-4 py-3 text-lg text-gray-900">Lanjutan</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3"><img class="logoPro" src="img/prodistik/excel.jpg" alt=""></td>
+            <td class="px-4 py-3">Microsoft Excel</td>
+           <td class="px-4 py-3 text-lg text-gray-900">Menengah</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3"><img class="logoPro" src="img/prodistik/ppt.png" alt=""></td>
+            <td class="px-4 py-3">Power Point</td>
+           <td class="px-4 py-3 text-lg text-gray-900">Lanjutan</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3"><img class="logoPro" src="img/prodistik/corel.jpg" alt=""></td>
+            <td class="px-4 py-3">Corel Draw</td>
+           <td class="px-4 py-3 text-lg text-gray-900">Lanjutan</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3"><img class="logoPro" src="img/prodistik/sketchup.jpg" alt=""></td>
+            <td class="px-4 py-3">Google SketchUp</td>
+           <td class="px-4 py-3 text-lg text-gray-900">Dasar</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3"><img class="logoPro" src="img/prodistik/roblox.jpg" alt=""></td>
+            <td class="px-4 py-3">Roblox Studio</td>
+           <td class="px-4 py-3 text-lg text-gray-900">Dasar</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3"><img class="logoPro" src="img/prodistik/logo-html.png" alt=""></td>
+            <td class="px-4 py-3">HTML</td>
+           <td class="px-4 py-3 text-lg text-gray-900">Lanjutan</td>
+          </tr>
+          <tr>
+            <td class="border-t-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-css.jpg" alt=""></td>
+            <td class="border-t-2 border-gray-200 px-4 py-3">CSS</td>
+            <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Menengah</td>
+            
+          </tr>
+          <tr>
+            <td class="border-t-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-js.jpg" alt=""></td>
+            <td class="border-t-2 border-gray-200 px-4 py-3">Java Script</td>
+            <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Dasar</td>
+            
+          </tr>
+          <tr>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-python.jpg" alt=""></td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Python</td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Dasar</td>
+            
+          </tr>
+          <tr>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-sql.png" alt=""></td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Database MySQL</td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Menengah</td>
+            
+          </tr>
+          <tr>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-php.jpg" alt=""></td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">PHP</td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Lanjutan</td>
+            
+          </tr>
+          <tr>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-cpp.png" alt=""></td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">C++</td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Dasar</td>
+            
+          </tr>
+          <tr>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-bootstrap.jpg" alt=""></td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Bootstrap CSS</td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Menengah</td>
+            
+          </tr>
+          <tr>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-laravel.png" alt=""></td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Laravel PHP</td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Lanjutan</td>
+            
+          </tr>
+          <tr>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-github.png" alt=""></td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Github</td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Menengah</td>
+            
+          </tr>
+          <tr>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-figma.png" alt=""></td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Figma UI</td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Dasar</td>
+            
+          </tr>
+          <tr>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><img class="logoPro" src="img/prodistik/logo-tailwind.png" alt=""></td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">Tailwind CSS</td>
+            <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">Dasar</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex gap-5 justify-content-end pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+      <a href="project.html#web" class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">
+        <div class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Lihat Hasil Karya &rarr;</div>
+      </a>
+      <a href="award.html#lainnya" class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">
+        <div class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Lihat Sertifikat &rarr;</div>
+      </a>
+    </div>
+  </div>
+</section>
+<h1 style="font-size: 2.5em;" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-danger-emphasis">Olimpiade</h1>
+<img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-5"  src="img/hr.png" alt=""> 
+<section id="olimpiade" class="text-gray-600 body-font">
+  <div class="container px-5 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="font-sm title-font text-gray-700 w-75 mx-auto">
+        Selain PRODISTIK, Bimbingan olimpiade juga merupakan salah satu program unggulan di MA Zainul Hasan 1 Genggong. Berikut ini merupakan 3 mapel olimpiade yang pernah saya ikuti, baik dari tingkat kabupaten hingga internasional.
+      </h1>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+          <div class="flex items-center mb-3">
+            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-red-500 text-white flex-shrink-0">+/-
+              <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg> -->
+            </div>
+            <h2 class="text-gray-900 text-lg title-font font-medium">Matematika</h2>
+          </div>
+          <div class="flex-grow">
+            <p class="leading-relaxed text-base text-center">
+              OSN, KSM, TIMO, KMNR, PHI UNISMA, LSM UNY, OLMAT UINSA, LIMAS, EMC DBS Foundation. 
+            </p>
+            <a href="award.html#olim" class="mt-3 text-red-500 inline-flex items-center">Selengkapnya
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+          <div class="flex items-center mb-3">
+            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-red-500 text-white flex-shrink-0">&lt;/&gt;
+              <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg> -->
+            </div>
+            <h2 class="text-gray-900 text-lg title-font font-medium">Informatika</h2>
+          </div>
+          <div class="flex-grow">
+            <p class="leading-relaxed text-base text-center">
+              OSN-K Informatika dan Cite Up Competitif Programming Python Universitas Pertamina
+            </p>
+            <a href="award.html#olimInfor" class="mt-3 text-red-500 inline-flex items-center">Selengkapnya
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+          <div class="flex items-center mb-3">
+            <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-red-500 text-white flex-shrink-0">&alpha;
+              <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+              </svg> -->
+            </div>
+            <h2 class="text-gray-900 text-lg title-font font-medium">Fisika</h2>
+          </div>
+          <div class="flex-grow">
+            <p class="leading-relaxed text-base text-center">
+              Physic Competition (PHYSTON) oleh Jurusan Fisika Fakultas MIPA Universitas Negeri Jember.
+            </p>
+            <a href="award.html#olimFisika" class="mt-3 text-red-500 inline-flex items-center">Selengkapnya
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex gap-5 justify-content-end pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+    <a href="pengalaman.html#olim" class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">
+      <div class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Bukti Dokumentasi &rarr;</div>
+    </a>
+    <a href="award.html#olim" class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">
+      <div class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Bukti Sertifikat &rarr;</div>
+    </a>
+  </div>
+</section>
+<h1 style="font-size: 2.5em;" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-danger-emphasis">Organisasi Siswa Intra Sekolah</h1>
+<img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block mb-5"  src="img/hr.png" alt=""> 
+<section id="osis" class="text-gray-600 body-font mb-5">
+  <div class="container px-5 mx-auto flex flex-wrap">
+    <div class="flex w-full mb-20 flex-wrap">
+      <p class="lg:pl-6 lg:w-2/3 mx-auto text-center leading-relaxed text-base">
+        Saya mendaftar dan dipilih sebagai pengurus OSIS pada masa bhakti 2022/2023 sebagai Anggota Divisi Jurnalistik dan CO Jurnalistik pada masa bhakti 2023/2024. Berikut dokumentasi foto dan sertifikat. Klik bagian konten untuk melihat lebih jelas.
+      </p>
+    </div>
+    <div class="flex flex-wrap md:-m-2 -m-1">
+      <div class="flex flex-wrap w-1/2">
+        <div id="dokumentasi" class="md:p-2 p-1 w-1/2">
+          <img onclick="openFullscreen(this)" alt="gallery" class="clickable-img w-full object-cover h-full object-center block" src="img/dokumentasi/ketua-diklat.JPG">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Ketua Panitia</h1>
+            <p class="text-center text-sm">Sambutan pada acara diklat Kepenulisan Buku</p>
+          </div>
+        </div>
+        <div id="dokumentasi" class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full object-cover h-full object-center block" src="img/dokumentasi/menebas aral.jpg">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Hasil Karya</h1>
+            <p class="text-center text-sm">Output yang dihasilkan peserta diklat berupa antologi cerpen</p>
+          </div>
+        </div>
+        <div id="dokumentasi" class="md:p-2 p-1 w-full">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full h-full object-cover object-center block" src="img/sertifikat/buku2.jpg">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Penulis Buku</h1>
+            <p class="text-center text-sm">Turut serta menulis karangan cerpen bersama peserta diklat</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div id="dokumentasi" class="md:p-2 p-1 w-full">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full h-full object-cover object-center block" src="img/dokumentasi/raker-osis.JPG">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Raker OSIS</h1>
+            <p class="text-center text-sm">Rapat kerja OSIS divisi jurnalistik</p>
+          </div>
+        </div>
+        <div style="max-height: 250px;" id="dokumentasi" class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full object-cover object-center block" src="img/karya/poster diklat.jpg">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Design Poster</h1>
+            <p class="text-center text-sm">Publikasi kegiatan OSIS MA ZAHA 1</p>
+          </div>
+        </div>
+        <div id="dokumentasi" class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full object-cover h-full object-center block" src="img/dokumentasi/pelantikan.jpg">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Pelantikan OSIS</h1>
+            <p class="text-center text-sm">Masa Bhakti 2023/2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex gap-5 justify-content-end pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+    <a href="project.html#buletin" class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">
+      <div class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Bukti Karya &rarr;</div>
+    </a>
+    <a href="pengalaman.html#osis" class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">
+      <div class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Bukti Dokumentasi &rarr;</div>
+    </a>
+  </div>
+</section>
+<div class="fullscreen-overlay" onclick="closeFullscreen()">
+  <span class="close-btn">&times;</span>
+  <img src="" class="fullscreen-img">
+</div>
+<h1 style="font-size: 2.5em;" data-aos="flip-left" data-aos-duration="1000" class="mt-5 text-center fw-bold text-danger-emphasis">Contact Person</h1>
+<img data-aos="flip-left" data-aos-duration="1000" style="max-width: 75%" class="mx-auto d-block"  src="img/hr.png" alt=""> 
+<div id="kontak">
+  <div class="w-100 p-3">
+    <div class="w-100 my-3">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.367852616922!2d113.14579927405138!3d-7.888042978463081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd64db9bf162e3f%3A0xb92d5c6736ad9f24!2sPercetakan%20Undangan!5e1!3m2!1sid!2sid!4v1746247605959!5m2!1sid!2sid" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
+    </div>
+    <div class="d-flex flex-wrap gap-1 mb-5">
+      <div id="kotakAkun" class="card p-3" style="width: 33%;">
+        <h1 class="text-3xl fw-bold text-center">Akun Telegram</h1>
+        <hr class="w-75 mx-auto">
+        <div class="d-flex gap-3">
+          <div class="w-25 p-3" >
+
+            <img src="img/prodistik/tele.jpg" alt="">
+          </div>
+          <div class="w-75 py-3">
+            <p class="text-lg my-auto">@ErvaKurnia</p>
+            <a class="btn btn-danger mt-3" href="https://t.me/ErvaKurnia">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div id="kotakAkun" class="card p-3" style="width: 33%;">
+        <h1 class="text-3xl fw-bold text-center">Akun Github</h1>
+        <hr class="w-75 mx-auto">
+        <div class="d-flex gap-3">
+          <div class="w-25 p-3" >
+
+            <img src="img/prodistik/logo-github.png" alt="">
+          </div>
+          <div class="w-75 py-3">
+            <p class="text-lg my-auto">azzahra207</p>
+            <a class="btn btn-danger mt-3" href="https://github.com/azzahra207">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div id="kotakAkun" class="card p-3" style="width: 33%;">
+        <h1 class="text-3xl fw-bold text-center">Akun Instagram</h1>
+        <hr class="w-75 mx-auto">
+        <div class="d-flex gap-3">
+          <div class="w-25 p-3" >
+
+            <img class="rounded-circle" src="img/prodistik/ig.jpg" alt="">
+          </div>
+          <div class="w-75 py-3">
+            <p class="text-lg my-auto">sidqianaazzahra</p>
+            <a class="btn btn-danger mt-3" href="https://www.instagram.com/sidqianaazzahra/">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<footer class="text-gray-600 body-font">
+  <div class="bg-red-700">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-light text-sm text-center sm:text-left">&copy; 2025
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-light ml-1" target="_blank">Web Portofolio. All Rights Reserved.</a>
+      </p>
+    </div>
+  </div>
+</footer>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init();
+    var typed = new Typed("#auto-type", {
+            strings: ["Sidqiana Azzahra","Pendaftar AMN Surabaya","Siap Berjuang demi Masa Depan Cemerlang"], 
+            typeSpeed: 70,
+            backSpeed: 70,
+            loop: true,
+        });
+        function frontEnd() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/sertifikat/ta terbaik.png">
+                <img class="w-100" src="img/alert/web psychic.png">
+                <p class="mt-3">Website Psychic sebagai sarana tes psikologi merupakan tugas akhir PRODISTIK yang dirancang menggunakan platform Laravel 8. Proses pembuatan dimulai dari studi psikologi, pembuatan logo dan soal, perancangan wireframe UI, perancangan algoritma untuk perhitungan tes psikologi, proses coding Front End maupun Back End, hingga pembuatan laporan.</p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function backEnd() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/sertifikat/python.png">
+                <img class="w-100" src="img/sertifikat/python13.png">
+                <p class="mt-3">
+                  Saya mulai mempelajari bahasa pemrograman Python dan mengikuti kompetisi Python tingkat nasional yang diadakan oleh Universitas Pertamina. Hasilnya, saya menduduki peringkat ke-13.
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function logika() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/sertifikat/JUARA 1 OSNK INFOR.jpg">
+                <p>
+                  OSN-K Informatika / komputer ini menyediakan soal logika dan komputasi dengan integrasi bahasa pemrograman C++
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function math() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/sertifikat/timo.jpg">
+                <p>
+                 (Bronze Award) TIMO (Thailand International Mathematical Olympiad) merupakan lomba olimpiade matematika tingkat Internasional yang diselenggarakan di Bangkok, Thailand pada 27 April 2024.
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function fisika() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/sertifikat/semifinal-fisika.jpg">
+                <p>
+                  Physic Competition merupakan lomba olimpiade fisika yang diselenggarakan oleh Jurusan Fisika Universitas Jember.
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function excel() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/sertifikat/excel.png">
+                <p>
+                  Di tahun 2022, saya dipilih untuk mengikuti lomba Procommit v.12 bidang Excel Basic yang diadakan oleh Institut Teknologi Sepuluh Nopember (ITS).
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function kti() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/sertifikat/piftik.png">
+                <p>
+                  Di tahun 2022, saya dipilih untuk mengikuti lomba Procommit v.12 bidang Penulisan Ide Futuristik yang diadakan oleh Institut Teknologi Sepuluh Nopember (ITS).
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function sejarah() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/sertifikat/sejarah.png">
+                <p>
+                  Perunggu pada ajang lomba KSSI (Kompetisi Super Sains Indonesia) tingkat nasional yang diselenggarakan oleh Academy Olympiad
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function bahasa() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/sertifikat/bi.png">
+                <p>
+                  Emas pada ajang lomba SSRO (Super Science Ramadan Olympiad) tingkat nasional yang diselenggarakan oleh Academy Olympiad
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function ketua() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/dokumentasi/ketua-diklat.JPG">
+                <img class="w-100" src="img/sertifikat/diklat.jpg">
+                <p>
+                  Diklat Kepenulisan buku merupakan program OSIS divisi jurnalistik
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function jurnalis() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/alert/warta.jpg">
+                <p>
+                  Pewarta buletin Pena OSIS edisi ke-8
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function ui() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/alert/ui.png">
+                <p>
+                  Gambar di atas merupakan hasil tampilan UI yang dibuat menggunakan aplikasi figma sebagai desain website Psychic sebagai Tuga Akhir PRODISTIK.
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function speak() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/dokumentasi/presentasiUM.png">
+                <p>
+                  Apresiasi Fakultas Ilmu Pendidikan Universitas Negeri Malang kepada 12 Santri Program Unggulan Prodistik untuk mempresentasikan Karya Akhir PRODISTIK
+MA Zainul Hasan 1 Genggong yang memiliki Hak Kekayaan Intelektual. video selengkapnya : <a class="text-info underline" href="https://vt.tiktok.com/ZSMmefgeQ/">klik di sini</a>
+                  
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function sastra() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/sertifikat/buku1.png">
+                <img class="w-100" src="img/sertifikat/buku2.jpg">
+                <p>
+                  Penulis buku solo antologi cerpen dengan judul "Melangkah Bersama Cinta-Nya" dan kontribusi penulisan cerpen "Menebas Aral"                  
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function design() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/karya/logo tahfiz.jpg">
+                <img class="w-100" src="img/alert/Bapak.jpg">
+                <img class="w-100" src="img/alert/ibu.jpg">
+                <p>
+                  Design logo dan vector wajah yang dibuat menggunakan aplikasi CorelDraw
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function lukis() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/alert/lukis.jpg">
+                <p>
+                  Lukisan tangan sketsa momen peresmian Asrama Mahasiswa Nusantara
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function tari() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/dokumentasi/tari.jpg">
+                <p>
+                  Pernah mengikuti beberapa pertunjukan tari dalam rangka acara Festival Santri Putri Pesantren Zainul Hasan Genggong
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function konselor() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/alert/curhat1.png">
+                <img class="w-100" src="img/alert/curhat2.png">
+                <p>
+                  Berikut merupakan salah satu bukti obrolan saya ketika berusaha mendengar dan memberi motivasi kepada teman saya yang sedang rapuh. Kami berada pada kegagalan yang serupa, namun saya sadar bahwa menyerah bukanlah pilihan yang tepat.
+                  </p>
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function ayat1() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/istikharah/anam.png">
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function ayat2() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/istikharah/araf.png">
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+  }
+        function ayat3() {
+        swal({
+        content: {
+            element: "div",
+            attributes: {
+                innerHTML: `
+                <img class="w-100" src="img/istikharah/yusuf.png">
+                     `,
+            }
+        },
+        width: "900px", 
+        button: "Close"
+    });
+
+}
+        document.addEventListener('DOMContentLoaded', function() {
+        const container = document.getElementById('newsTickerContainer');
+        const ticker = document.getElementById('newsTicker');
+        
+        ticker.style.visibility = 'visible';
+        ticker.style.left = '100%';
+        
+        const textWidth = ticker.scrollWidth;
+        const viewportWidth = window.innerWidth;
+        const scrollSpeed = 150; 
+        
+        const duration = (textWidth + viewportWidth) / scrollSpeed;
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes scroll-news {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-${textWidth + viewportWidth}px); }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        ticker.style.animationDuration = `${duration}s`;
+        
+        container.classList.add('ready');
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll(".icon");
+    const descriptionContainer = document.getElementById("description-container");
+
+    cards.forEach(card => {
+        card.addEventListener("click", function() {
+            const type = this.getAttribute("data-type");
+            const content = document.querySelector(`.description[data-type='${type}']`);
+            
+            if (content) {
+                descriptionContainer.innerHTML = content.innerHTML;
+            }
+        });
+    });
+});
+document.querySelectorAll('.icon').forEach(icon => {
+  icon.addEventListener('click', function() {
+    document.querySelectorAll('.icon').forEach(i => {
+      i.classList.remove('active');
+    });
+    
+    this.classList.add('active');
+  });
+});
+function openFullscreen(img) {
+            const overlay = document.querySelector('.fullscreen-overlay');
+            const fullscreenImg = overlay.querySelector('.fullscreen-img');
+            
+            fullscreenImg.src = img.src;
+            overlay.style.display = 'flex';
+        }
+
+        function closeFullscreen() {
+            document.querySelector('.fullscreen-overlay').style.display = 'none';
+        }
+</script>
+</body>
+</html>
