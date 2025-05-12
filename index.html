@@ -881,25 +881,29 @@
         </div>
       </div>
       <div class="flex flex-wrap w-1/2">
-        <div id="dokumentasi" data-aos="zoom-out" data-aos-duration="1000" class="md:p-2 p-1 w-full">
+        
+        
+        <div id="dokumentasi" data-aos="zoom-out" data-aos-duration="1000" class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full object-cover h-full object-center block" src="img/Nun Alex.jpg">
+          <div class="caption">
+            <h1 class="fw-bold text-2xl">Lulusan Terbaik</h1>
+            <p class="text-center text-sm">Pemberian penghargaan oleh Kepala Madrasah Nun Ahsan Maliki, S.Sy. M.Pd</p>
+          </div>
+        </div>
+        <div id="dok" data-aos="zoom-out" data-aos-duration="1000" class="md:p-2 p-1 w-1/2">
+          <div id="dokumentasi">
           <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full h-full object-cover object-center block" src="img/dokumentasi/raker-osis.JPG">
           <div class="caption">
             <h1 class="fw-bold text-2xl">Raker OSIS</h1>
             <p class="text-center text-sm">Rapat kerja OSIS divisi jurnalistik</p>
           </div>
-        </div>
-        <div style="max-height: 250px;" id="dokumentasi" data-aos="zoom-out" data-aos-duration="1000" class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full object-cover object-center block" src="img/karya/poster diklat.jpg">
-          <div class="caption">
-            <h1 class="fw-bold text-2xl">Design Poster</h1>
-            <p class="text-center text-sm">Publikasi kegiatan OSIS MA ZAHA 1</p>
           </div>
-        </div>
-        <div id="dokumentasi" data-aos="zoom-out" data-aos-duration="1000" class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full object-cover h-full object-center block" src="img/dokumentasi/pelantikan.jpg">
-          <div class="caption">
-            <h1 class="fw-bold text-2xl">Pelantikan OSIS</h1>
-            <p class="text-center text-sm">Masa Bhakti 2023/2024</p>
+          <div id="dokumentasi" data-aos="zoom-out" data-aos-duration="1000" class="md:p-2 p-1 w-full">
+            <img alt="gallery" onclick="openFullscreen(this)" class="clickable-img w-full object-cover object-center block" src="img/karya/poster diklat.jpg">
+            <div class="caption">
+              <h1 class="fw-bold text-2xl">Design Poster</h1>
+              <p class="text-center text-sm">Publikasi kegiatan OSIS MA ZAHA 1</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1353,7 +1357,7 @@ MA Zainul Hasan 1 Genggong yang memiliki Hak Kekayaan Intelektual. video selengk
         
         const textWidth = ticker.scrollWidth;
         const viewportWidth = window.innerWidth;
-        const scrollSpeed = 120; 
+        const scrollSpeed = 150; 
         
         const duration = (textWidth + viewportWidth) / scrollSpeed;
         const style = document.createElement('style');
